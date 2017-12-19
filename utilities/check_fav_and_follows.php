@@ -67,13 +67,11 @@ $start_time = microtime(true);
 
 echo 'Checking modules with Following or Favorites enabled...' . PHP_EOL;
 
-global $beanList;
-
 $full_module_list = array_merge($beanList, $app_list_strings['moduleList']);
 
 $modules_enabled = array();
 foreach($full_module_list as $module => $value) {
-    $bean = BeanFactory::newBean($value);
+    $bean = BeanFactory::newBean($module);
     if(!empty($dictionary[$bean->object_name]) && (!empty($dictionary[$bean->object_name]['favorites']) || !empty($dictionary[$bean->object_name]['following']))) {
         if(empty($modules_enabled[$module])) {
             $modules_enabled[$module] = $bean->object_name;
