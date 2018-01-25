@@ -1,7 +1,7 @@
 <?php
 
 $templates['disable_follows_favorite'] = array(
-    'folder_pattern' => 'custom/Extension/modules/{MODULENAME}/Ext',
+    'directory_pattern' => 'custom/Extension/modules/{MODULENAME}/Ext',
     'modules' => array (
         'ACLRoleSets' => 'ACLRoleSet',
         'Accounts' => 'Account',
