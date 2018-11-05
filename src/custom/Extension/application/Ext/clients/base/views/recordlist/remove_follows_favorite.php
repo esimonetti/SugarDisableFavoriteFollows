@@ -1,5 +1,7 @@
 <?php
 
+// REMOVED as it is handled on the single module's view
+/*
 $viewdefs['base']['view']['recordlist']['favorite'] = false;
 $viewdefs['base']['view']['recordlist']['following'] = false;
 
@@ -10,3 +12,4 @@ if(!empty($viewdefs['base']['view']['recordlist']['rowactions']['actions'])) {
         }
     }
 }
+*/
